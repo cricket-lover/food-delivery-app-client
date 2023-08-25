@@ -1,5 +1,4 @@
 export const CDN_URL =
   "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
-export const API_URL =
-  "https://food-delivery-app-server-cricket-lover.vercel.app/";
+export const API_URL = "https://phaneendra-food-delivery-api.vercel.app";
