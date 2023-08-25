@@ -1,0 +1,27 @@
+h2 {
+  align-self: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  gap: 1rem;
+  border: 1px solid currentColor;
+  padding: 2rem;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.label > input {
+  width: 14rem;
+}
+
+.link-to-btn {
+  text-decoration: underline;
+}

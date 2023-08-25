@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  width: min-content;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 48px 0px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.restaurant-image {
+  border-radius: 10px;
+  width: 16rem;
+  aspect-ratio: 16 / 9;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.cost-and-time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

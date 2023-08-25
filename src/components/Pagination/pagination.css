@@ -1,0 +1,11 @@
+.pagination-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination-buttons-container {
+  display: flex;
+  margin-top: 2rem;
+  gap: 10px;
+}
