@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { RestaurantsDispatchContext } from "../../RestaurantsContext";
+import { API_URL } from "../../constants";
 
 export const Logout = () => {
   const { userDispatch } = useContext(RestaurantsDispatchContext);
@@ -7,7 +8,7 @@ export const Logout = () => {
   const logoutHandler = async (e) => {
     const token = localStorage.getItem("access_token") || "";
 
-    const response = await fetch("http://localhost:5000/api/logout", {
+    const response = await fetch(`${API_URL}/api/logout`, {
       method: "DELETE",
       headers: { authorization: `Bearer ${token}` },
     });

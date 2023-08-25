@@ -3,6 +3,7 @@ import "./signup.css";
 import { RestaurantsContext } from "../../RestaurantsContext";
 import { Link, useNavigate } from "react-router-dom";
 import { enqueueSnackbar } from "notistack";
+import { API_URL } from "../../constants";
 
 export const Signup = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ export const Signup = () => {
       return;
     }
     try {
-      const response = await fetch("http://localhost:5000/api/signup", {
+      const response = await fetch(`${API_URL}/api/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
